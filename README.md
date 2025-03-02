@@ -15,10 +15,3 @@ A web-based implementation of Booth's Algorithm for binary multiplication. This 
 - **Frontend**: HTML, CSS (Tailwind), JavaScript
 - **Version Control**: Git
 
-## How to Run
-Follow these steps to set up and run the project locally:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
