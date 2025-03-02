@@ -1,4 +1,5 @@
-from flask import Flask,os, request, jsonify, render_template # type: ignore
+from flask import Flask # type: ignore
+import os, request, jsonify, render_template # type: ignore
 from waitress import serve # type: ignore
 
 app = Flask(__name__)
