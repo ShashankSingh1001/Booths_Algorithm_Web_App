@@ -1,4 +1,5 @@
-from flask import Flask, request, jsonify, render_template # type: ignore
+from flask import Flask,os, request, jsonify, render_template # type: ignore
+from waitress import serve # type: ignore
 
 app = Flask(__name__)
 
@@ -82,4 +83,5 @@ def booth():
     return jsonify({"result": result, "steps": steps})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000)) 
+    serve(app, host="0.0.0.0", port=port)
